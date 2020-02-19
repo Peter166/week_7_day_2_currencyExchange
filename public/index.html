@@ -23,6 +23,18 @@
 
   <h2>{{calculate}}</h2>
 
+<h1>Back to euro</h1>
+<select id="currency_select" v-model.number="backToEuro">
+  <option disabled value="">Select a currencie</option>
+  <option v-for="(key, value) in object.rates" :value="key">{{value}}</option>
+</select>
+
+  <input type="number" v-model.number="currencyInput"/>
+
+<h2>{{backToEuros}}</h2>
+
+
+
   </div>
 
 </body>

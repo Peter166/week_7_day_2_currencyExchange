@@ -7,11 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
       object: 0,
       euroInput: 0,
       chosenCurrency: 0,
+      backToEuro: 0,
+      currencyInput: 0,
     },
     computed: {
       calculate: function(){
         if ( this.euroInput !== null && this.chosenCurrency !== null){
           const result=(this.euroInput / this.chosenCurrency)
+         return result.toFixed(2)
+        }
+      },
+      backToEuros: function(){
+        if ( this.euroInput !== null && this.chosenCurrency !== null){
+          const result=(this.backToEuro / this.currencyInput)
          return result.toFixed(2)
         }
       },
