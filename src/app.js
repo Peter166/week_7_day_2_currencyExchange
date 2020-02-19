@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       },
       backToEuros: function(){
-        if ( this.euroInput !== null && this.chosenCurrency !== null){
+        if ( this.backToEuro !== null && this.currencyInput !== null){
           const result=(this.backToEuro / this.currencyInput)
          return result.toFixed(2)
         }
